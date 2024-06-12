@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter game</title>
+    <link rel="stylesheet" href="/index.css">
+</head>
+<body class="body">
+    <div class="box">
+        <div class="b1">
+            <h1 class="h1">counter</h1>
+            <p class="p" id="counterValue">0</p>
+            <button class="b" onclick="onDecrese()">DECREMENT</button>
+            <button class="b" onclick="onReset()">RESET</button>
+            <button class="b" onclick="onIncrese()">INCREMENT</button>
+
+        </div>
+
+    </div>
+<script>
+    let Value=document.getElementById("counterValue");
+    function onIncrese(){
+        let presentValue = Value.textContent;
+        let updatedValue = parseInt(presentValue) + 1;
+        Value.textContent = updatedValue;
+        if(updatedValue>0){
+            Value.style.color="Green";
+        }
+        else if(updatedValue<0){
+            Value.style.color="Red";
+        }
+        else{
+            Value.style.color="Blue";
+        }
+
+    }
+    function onDecrese(){
+        let presentValue = Value.textContent;
+        let updatedValue = parseInt(presentValue) - 1;
+        Value.textContent = updatedValue;
+        if(updatedValue>0){
+            Value.style.color="Green";
+        }
+        else if(updatedValue<0){
+            Value.style.color="Red";
+        }
+        else{
+            Value.style.color="Blue";
+        }
+
+    }
+    function onReset(){
+        let presentValue = 0;
+        Value.textContent = presentValue;
+        if(updatedValue>0){
+            Value.style.color="Green";
+        }
+        else if(updatedValue<0){
+            Value.style.color="Red";
+        }
+        else{
+            Value.style.color="Blue";
+        }
+
+    }
+    
+</script>
+
+    
+</body>
+</html>

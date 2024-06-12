@@ -1,0 +1,51 @@
+.body{
+    background-color: black;
+    flex-wrap: wrap;
+    display: flex;
+}
+.box{
+    border: 1px solid;
+    height: 400px;
+    width: 350px;
+    background-color: white;
+    position: relative;
+    left: 430px;
+    top: 100px;
+    border-radius: 6px;
+}
+.b1{ border: 1px solid;
+    height: 300px;
+    width: 325px;
+    background-color: rgb(16, 15, 15);
+    position: relative;
+    left: 10px;
+    top: 10px;
+    border-radius: 6px;
+}
+.h1{
+    font-style: "Roboto";
+    font-weight: 700;
+    font-size: 50px;
+    color: white;
+    position:absolute;
+    left: 70px; 
+}
+.p{
+    color: white;
+    font-size: 100px;
+    font-weight: 900;
+    position: relative;
+    left: 130px;
+    top: 20px;
+
+
+}
+.b{
+    padding-left:15px ;
+    padding-right: 15px;
+    border-radius: 4px;
+    position: relative;
+    top: 10px;
+    padding-bottom: 5px;
+    padding-top: 3px;
+}
